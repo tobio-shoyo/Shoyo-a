@@ -88,7 +88,7 @@ A Diverse Systematic Bot Written in Python.
 
 You can Add Me In Your Group for Knowing my True Power.
 
-You can either use /help or the Commands Button Given Below To get a list of my features!`
+You can either use `/help` or the Commands Button Given Below To get a list of my features!`
 
 
 [ㅤ](https://telegra.ph/file/7eaa21cf7b81549ba29ad.jpg)
@@ -446,7 +446,7 @@ def Arise_about_callback(update, context):
     query = update.callback_query
     if query.data == "Arise_":
         query.message.edit_text(
-             text="""I'm *Mᴀᴋɪᴍᴀ Sᴀɴsᴜᴋɪ*, a powerful group management bot built to help you manage your group easily.
+             text="""I'm *Hinata Shôyô*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -481,7 +481,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Makima*
+            text=""" Hi..🤗 I'm *Shôyô*
                   \n [WORK IN PROGRESS](https://T.ME/animefunchat) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -777,7 +777,11 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", SUP_IMG, caption=f"UwU, I am here to protect you..")
+            dispatcher.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",
+                "[Yes I'm alive now!](https://telegra.ph/file/29bdf8346953cdde73ee3.jpg)",
+                parse_mode=ParseMode.MARKDOWN,
+            )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
