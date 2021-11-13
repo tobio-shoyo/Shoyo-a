@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from AriseRobot.pyrogramee.pluginhelpers import fetch, json_prettify
+from AriseRobot.pyrogramee.pluginshelper import fetch, json_prettify
 from AriseRobot.services.pyrogram import pbot as app
 
 
